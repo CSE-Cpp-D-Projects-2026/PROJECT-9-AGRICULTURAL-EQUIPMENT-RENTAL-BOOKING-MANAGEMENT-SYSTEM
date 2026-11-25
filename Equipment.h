@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Equipment {
+    int equipmentID;
+    string equipmentName;
+    string category;
+    float price;
+    string status;
+
+    public:
+        Equipment(int id, string name, string cat, float p, string s)
+    {
+        equipmentID = id;
+        equipmentName = name;
+        category = cat;
+        price = p;
+        status = s;
+
+    }
+    void displayEquipment() {
+        cout << "Equipment ID: " << equipmentID << endl;
+        cout << "Name: " << equipmentName << endl;
+        cout << "Category: " << category << endl;
+        cout << "Price per day: " << price << endl;
+        cout << "Status: " << status << endl;
+    }
+};
