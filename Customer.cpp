@@ -1,4 +1,3 @@
-
 #include "Customer.h"
 Customer::Customer()
 {
@@ -15,33 +14,24 @@ void Customer::registerCustomer()
     getline(cin, customerName);
     cout << "Enter Phone Number: ";
     cin >> phone;
-
     cout << "\nCustomer registered successfully!" << endl;
 }
-
 void Customer::displayCustomer()
 {
     cout << "\n----- Customer Details -----" << endl;
-
     cout << "Customer ID: " << customerID << endl;
     cout << "Customer Name: " << customerName << endl;
     cout << "Phone Number: " << phone << endl;
 }
-
-// Update Customer Details
 void Customer::updateDetails()
 {
     cin.ignore();
-
     cout << "\nEnter New Customer Name: ";
     getline(cin, customerName);
-
     cout << "Enter New Phone Number: ";
     cin >> phone;
-
     cout << "\nCustomer details updated successfully!" << endl;
 }
-
 int Customer::getCustomerID()
 {
     return customerID;
