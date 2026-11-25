@@ -2,16 +2,17 @@
 
 int main() {
     Equipment e1(101, "Projector", "Electronics", 500, "Available");
-    Equipment e2(102, "Camera", "Photography", 300, "Rented");
-    Equipment e3(103, "Tripod", "Accessories", 100, "Available");
 
+    cout << "Before booking:" << endl;
+    cout << "Status: " << e1.getStatus() << endl;
+
+    e1.setStatus("Rented");
+
+    cout << "\nAfter booking:" << endl;
+    cout << "Status: " << e1.getStatus() << endl;
+
+    cout << "\nEquipment details:" << endl;
     e1.displayEquipment();
-    cout << "------------------" << endl;
-
-    e2.displayEquipment();
-    cout << "------------------" << endl;
-
-    e3.displayEquipment();
 
     return 0;
 }
