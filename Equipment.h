@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 class Equipment {
     int equipmentID;
@@ -27,7 +28,6 @@ public:
     string getStatus() {
         return status;
     }
-
     void setStatus(string newStatus) {
         status = newStatus;
     }
@@ -46,5 +46,21 @@ public:
 
     float getPrice() {
         return price;
+    }
+    void setEquipmentName(string newName) {
+    equipmentName = newName;
+    }
+
+    void setCategory(string newCategory) {
+    category = newCategory;
+    }   
+
+    void setPrice(float newPrice) {
+        if (newPrice > 0) {
+            price = newPrice;
+        }
+        else {
+            cout << "Invalid price!" << endl;
+        }
     }
 };
