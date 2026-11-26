@@ -13,6 +13,12 @@ int main() {
 
     cout << "\nEquipment details:" << endl;
     e1.displayEquipment();
+    
+    cout << "\nTesting Getters:" << endl;
+    cout << "ID: " << e1.getEquipmentID() << endl;
+    cout << "Name: " << e1.getEquipmentName() << endl;
+    cout << "Category: " << e1.getCategory() << endl;
+    cout << "Price: " << e1.getPrice() << endl;
 
     return 0;
 }
