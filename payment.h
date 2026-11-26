@@ -13,5 +13,5 @@ class payment
      void getpaymentdetails();
      void displaypaymentdetails();
      int getbookingid();
-     int bookingid();    
+     int getpaymentiid();   
 };
