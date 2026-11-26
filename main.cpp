@@ -1,11 +1,8 @@
 #include "Customer.h"
-
 int main()
 {
-    Customer c;
-
-    c.registerCustomer();
-    c.displayCustomer();
-
+    customer c;
+    c.getcustomerdetails();
+    c.displaycustomerdetails();
     return 0;
 }
