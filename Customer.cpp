@@ -11,7 +11,7 @@ void customer::getcustomerdetails()
   cout<<"Enter customer phone number :";
   getline(cin,phoneno);
   cout<<"Enter customer address :";
-  getline(cin,address);
+  getline(cin,address); 
 }
 void customer::displaycustomerdetails()
 {
