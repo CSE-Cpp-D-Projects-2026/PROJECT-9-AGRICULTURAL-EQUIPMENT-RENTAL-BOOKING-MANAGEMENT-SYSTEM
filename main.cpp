@@ -1,5 +1,5 @@
 #include "Customer.h"
-int main()
+int main() 
 {
     customer c;
     c.getcustomerdetails();
