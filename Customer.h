@@ -7,7 +7,7 @@ class customer
      string cname;
      string phoneno;
      int cid;
-     string address;
+     string address; 
     public:
       void getcustomerdetails();
       void displaycustomerdetails();
