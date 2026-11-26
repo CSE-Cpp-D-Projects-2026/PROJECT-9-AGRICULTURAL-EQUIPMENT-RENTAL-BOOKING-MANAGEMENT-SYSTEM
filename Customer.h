@@ -1,18 +1,24 @@
-#include <iostream>
-#include <string>
+#include<iostream>
+#include<string>
 using namespace std;
-class Customer
+class customer
 {
-private:
-    int customerID;
-    string customerName;
-    string phone;
-
-public:
-    Customer();
-    void registerCustomer();
-    void displayCustomer();
-    void updateDetails();
-    int getCustomerID();
+    private:
+     string cname;
+     string phoneno;
+     int cid;
+     string address;
+    public:
+      void getcustomerdetails();
+      void displaycustomerdetails();
+      int getcid();
+      string getcname();
 };
+
+
+
+
+
+
+
 
